@@ -1,0 +1,116 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background: url(traffic\ jam.jpg)no-repeat;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    backdrop-filter: blur(20px);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 500px;
+}
+
+h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #fff;
+    text-align: center;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    color: #fff;
+    font-weight: 500;
+}
+
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group input[type="password"],
+.form-group select {
+    align-items: center;
+    width: 95%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+}
+
+.form-group input[type="text"]:focus,
+.form-group input[type="email"]:focus,
+.form-group input[type="password"]:focus,
+.form-group select:focus {
+    border-color: #018786;
+    outline: none;
+    box-shadow: 0 0 5px rgba(1, 135, 134, 0.3);
+}
+
+.required {
+    color: red;
+}
+
+.navigation {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.navigation button {
+    width: 80%;
+    height: 45px;
+    background: #fff;
+    border: none;
+    outline: none;
+    border-radius: 40px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    cursor: pointer;
+    font-size: 16px;
+    color: #333;
+    font-weight: 600;
+}
+
+.navigation button:hover {
+    background: rgba(83,73,73,0.5);
+    color: #fff;
+    border-color: #fff;
+}
+
+#submitBtn {
+    width: 80%;
+    height: 45px;
+    background: #fff;
+    border: none;
+    outline: none;
+    border-radius: 40px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    cursor: pointer;
+    font-size: 16px;
+    color: #333;
+    font-weight: 600;
+}
+
+#submitBtn:hover {
+    background: rgba(83,73,73,0.5);
+    color: #fff;
+    border-color: #fff;
+}
+
+.question-group {
+    display: none;
+}
+
+.question-group.active {
+    display: block;
+}

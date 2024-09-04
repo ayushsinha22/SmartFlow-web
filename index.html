@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Commuter Habits Questionnaire</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome, please answer the following!</h1>
+        <form id="signupForm">
+            <div class="question-group active">
+                <div class="form-group">
+                    <label for="name">Full Name <span class="required">*</span></label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email <span class="required">*</span></label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="password">Password <span class="required">*</span></label>
+                    <input type="password" id="password" name="password" required>
+                </div>
+
+                <div class="form-group navigation">
+                    <button type="button" id="nextBtn">Next</button>
+                </div>
+            </div>
+
+            <div class="question-group">
+                <div class="form-group">
+                    <label for="frequency">How often do you commute?</label>
+                    <select id="frequency" name="frequency" required>
+                        <option value="daily">Daily</option>
+                        <option value="few_times_week">A few times a week</option>
+                        <option value="once_week">Once a week</option>
+                        <option value="occasionally">Occasionally</option>
+                    </select>
+                </div>
+                <div class="form-group navigation">
+                    <button type="button" id="prevBtn">Previous</button>
+                    <button type="button" id="nextBtn">Next</button>
+                </div>
+            </div>
+
+            <div class="question-group">
+                <div class="form-group">
+                    <label for="transportation">Primary Mode of Transportation</label>
+                    <select id="transportation" name="transportation" required>
+                        <option value="car">Car</option>
+                        <option value="public_transit">Public Transit (Bus, Metro)</option>
+                        <option value="bicycle">Bicycle</option>
+                        <option value="walking">Walking</option>
+                        <option value="ride_sharing">Ride-sharing services (Uber, Rapido)</option>
+                        <option value="others">Others</option>
+                    </select>
+                </div>
+                <div class="form-group navigation">
+                    <button type="button" id="prevBtn">Previous</button>
+                    <button type="button" id="nextBtn">Next</button>
+                </div>
+            </div>
+
+            <div class="question-group">
+                <div class="form-group">
+                    <label for="commute_time">What time of day do you usually commute?</label>
+                    <select id="commute_time" name="commute_time" required>
+                        <option value="morning">Morning (6 AM - 9 AM)</option>
+                        <option value="midday">Midday (9 AM - 12 PM)</option>
+                        <option value="afternoon">Afternoon (12 PM - 3 PM)</option>
+                        <option value="evening">Evening (3 PM - 6 PM)</option>
+                        <option value="night">Night (6 PM - 9 PM)</option>
+                        <option value="late_night">Late Night (9 PM - 12 AM)</option>
+                    </select>
+                </div>
+                <div class="form-group navigation">
+                    <button type="button" id="prevBtn">Previous</button>
+                    <button type="button" id="nextBtn">Next</button>
+                </div>
+            </div>
+            <div class="question-group">
+                <div class="form-group">
+                    <label for="impact">How does traffic impact your daily schedule?</label>
+                    <select id="impact" name="impact" required>
+                        <option value="significant">Significant impact</option>
+                        <option value="moderate">Moderate impact</option>
+                        <option value="little">Little to no impact</option>
+                        <option value="none">No impact at all</option>
+                    </select>
+                </div>
+                <div class="form-group navigation">
+                    <button type="button" id="prevBtn">Previous</button>
+                    <button type="submit" id="submitBtn">Submit</button>
+                </div>
+            </div>
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
